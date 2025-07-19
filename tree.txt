@@ -1,0 +1,1413 @@
+web-2.0/
+├─ .github/
+│  └─ workflows/
+│     ├─ buymeua_core_stage.yml
+│     └─ buymeua_core.yml
+├─ build/
+│  ├─ static/
+│  │  ├─ css/
+│  │  │  ├─ 171.ebce68f9.chunk.css
+│  │  │  ├─ 171.ebce68f9.chunk.css.map
+│  │  │  ├─ 214.3a85b7dd.chunk.css
+│  │  │  ├─ 214.3a85b7dd.chunk.css.map
+│  │  │  ├─ 248.cc197485.chunk.css
+│  │  │  ├─ 248.cc197485.chunk.css.map
+│  │  │  ├─ 32.b8427f2e.chunk.css
+│  │  │  ├─ 32.b8427f2e.chunk.css.map
+│  │  │  ├─ 345.8fb33189.chunk.css
+│  │  │  ├─ 345.8fb33189.chunk.css.map
+│  │  │  ├─ 366.bf07a012.chunk.css
+│  │  │  ├─ 366.bf07a012.chunk.css.map
+│  │  │  ├─ 460.3926e5f5.chunk.css
+│  │  │  ├─ 460.3926e5f5.chunk.css.map
+│  │  │  ├─ 528.a1424a4f.chunk.css
+│  │  │  ├─ 528.a1424a4f.chunk.css.map
+│  │  │  ├─ 642.cd7b5354.chunk.css
+│  │  │  ├─ 642.cd7b5354.chunk.css.map
+│  │  │  ├─ 779.af742bb6.chunk.css
+│  │  │  ├─ 779.af742bb6.chunk.css.map
+│  │  │  ├─ 811.d41b79d4.chunk.css
+│  │  │  ├─ 811.d41b79d4.chunk.css.map
+│  │  │  ├─ 906.82cfafca.chunk.css
+│  │  │  ├─ 906.82cfafca.chunk.css.map
+│  │  │  ├─ 96.b8ab1cb1.chunk.css
+│  │  │  ├─ 96.b8ab1cb1.chunk.css.map
+│  │  │  ├─ main.f7464c18.css
+│  │  │  └─ main.f7464c18.css.map
+│  │  ├─ js/
+│  │  │  ├─ 171.80940628.chunk.js
+│  │  │  ├─ 171.80940628.chunk.js.map
+│  │  │  ├─ 214.29a757f2.chunk.js
+│  │  │  ├─ 214.29a757f2.chunk.js.map
+│  │  │  ├─ 248.8fa7ff12.chunk.js
+│  │  │  ├─ 248.8fa7ff12.chunk.js.map
+│  │  │  ├─ 32.0a526d37.chunk.js
+│  │  │  ├─ 32.0a526d37.chunk.js.map
+│  │  │  ├─ 345.9b5d2c75.chunk.js
+│  │  │  ├─ 345.9b5d2c75.chunk.js.map
+│  │  │  ├─ 366.29e30d4e.chunk.js
+│  │  │  ├─ 366.29e30d4e.chunk.js.map
+│  │  │  ├─ 460.ef47af98.chunk.js
+│  │  │  ├─ 460.ef47af98.chunk.js.map
+│  │  │  ├─ 528.51f98c67.chunk.js
+│  │  │  ├─ 528.51f98c67.chunk.js.map
+│  │  │  ├─ 642.6485f151.chunk.js
+│  │  │  ├─ 642.6485f151.chunk.js.map
+│  │  │  ├─ 779.a5a2f311.chunk.js
+│  │  │  ├─ 779.a5a2f311.chunk.js.map
+│  │  │  ├─ 811.341455d6.chunk.js
+│  │  │  ├─ 811.341455d6.chunk.js.map
+│  │  │  ├─ 906.306f1f08.chunk.js
+│  │  │  ├─ 906.306f1f08.chunk.js.map
+│  │  │  ├─ 96.94b93b3b.chunk.js
+│  │  │  ├─ 96.94b93b3b.chunk.js.map
+│  │  │  ├─ main.16211a60.js
+│  │  │  ├─ main.16211a60.js.LICENSE.txt
+│  │  │  └─ main.16211a60.js.map
+│  │  └─ media/
+│  │     ├─ 404notFound.d5f8973b9506beff5d4f.png
+│  │     ├─ applePay.1192b3c36fb292d9c035059450c569f2.svg
+│  │     ├─ AppStoreBadge.7f7a6d898d8af5e78a7b0bde54074356.svg
+│  │     ├─ email.7cf7a2ad4093eb3f661d83b4107b9a41.svg
+│  │     ├─ emptyBox.433953122f8d6d7d86a0.png
+│  │     ├─ error.cd9c588c50b32adffa9e056389d96a36.svg
+│  │     ├─ Facebook.8fd9f6f5e7db4b904cdad1755b4b9a44.svg
+│  │     ├─ friendsShopping.b736eff70d8db25e9fd2.png
+│  │     ├─ googlePay.71e442e9599a5d34eb6fdd0a03e66c18.svg
+│  │     ├─ hide.884df350e592d6020b140f1a7875df31.svg
+│  │     ├─ Insta.5a2af6ed337b8fadfb92d9f175cbce8e.svg
+│  │     ├─ lock.807423d715e7691f8b74ef5129e03c53.svg
+│  │     ├─ mainBanner.7475fda7ae6e6ddbdf50.png
+│  │     ├─ masterCard.7fb55428fc3ca1beadec21510957a7cb.svg
+│  │     ├─ mdi_access-time.73c5f8e060e54c3840f9f0ac8b1200a1.svg
+│  │     ├─ mdi_add-shopping-cart.515f29b1251530e02aeccb10a540bcf3.svg
+│  │     ├─ mdi_add.86eedac632ec2a475bf4fe42bf202df3.svg
+│  │     ├─ mdi_alert-circle-outline.5811d61586b59428cb67bd1807cdd388.svg
+│  │     ├─ mdi_arrow-down.89d76ccffe1ee6be5c5b349a3943fdae.svg
+│  │     ├─ mdi_arrow-left.1f3d2f4476a559af6eec4f51a6dee377.svg
+│  │     ├─ mdi_arrow-right.549dec6a5c68a279631cda676510b746.svg
+│  │     ├─ mdi_arrow-up.bf6aba5fa4c2b17b67fa37a3231b3ea6.svg
+│  │     ├─ mdi_bell-ring-outline.43886c35463407664da8443a736f7fac.svg
+│  │     ├─ mdi_cards-heart.34e05cc20c2ecc690b45cce8b77f8ee3.svg
+│  │     ├─ mdi_cellphone.bc1bd42ccb535952768b8c06e3e42701.svg
+│  │     ├─ mdi_chat-bubble-outline.bb3562d44878714394bb9d61cf784d15.svg
+│  │     ├─ mdi_check-circle.33df4527640e1ebec04b0998f13a6dda.svg
+│  │     ├─ mdi_check.86fb3a20ab937e34b3710e8adb5f34db.svg
+│  │     ├─ mdi_checkbox-blank-outline.7999511a23c9f51b3a96438ce6cba18e.svg
+│  │     ├─ mdi_checkbox-marked.43d8f6a1809adc9b7cac4f7eb7cc55fb.svg
+│  │     ├─ mdi_chevron-down.dad73a96d3563da2f2f7fd9ee9a2d166.svg
+│  │     ├─ mdi_chevron-left.deb3117043a99269022d9b4e02e2f7cf.svg
+│  │     ├─ mdi_chevron-right.10b5c234bc6089b495a63e936994bddf.svg
+│  │     ├─ mdi_chevron-up.9c2a283c1c001c14064be25891be3737.svg
+│  │     ├─ mdi_close.4ab55052efb270c7a2cd703de7f17b4d.svg
+│  │     ├─ mdi_cloud-upload-outline.d11087a71299b83121b1e9759b440d07.svg
+│  │     ├─ mdi_content-copy.3155ea3cdb3080f3717609d361dda8d5.svg
+│  │     ├─ mdi_credit-card-check-outline.090edc367d178b8811b4d659d98caf4b.svg
+│  │     ├─ mdi_delete-outline.0c2667a4cc580c64f7276a4e2b400330.svg
+│  │     ├─ mdi_email-outline.356a947dd2931aa3270d00122d669b96.svg
+│  │     ├─ mdi_eye-off-outline.a625ee31be4acdac7a0d59dcf3909b85.svg
+│  │     ├─ mdi_eye-outline.60720268655c45f27a2af5942d80a4f9.svg
+│  │     ├─ mdi_file-image-outline.f2a51699cf51b4d44bda45b72521061e.svg
+│  │     ├─ mdi_file-move-outline.bf8240c04f4174645550e08c60f5f026.svg
+│  │     ├─ mdi_filter-variant.e2eaaf704c7ff92a63d8bfed88f40f87.svg
+│  │     ├─ mdi_format-list-bulleted.19f0ecead43d85b89548174aa310ec61.svg
+│  │     ├─ mdi_globe.232d94512def241f081db5a1364d44d8.svg
+│  │     ├─ mdi_heart-outline.dd981f428a122cc197916754e5693c7c.svg
+│  │     ├─ mdi_history.cf039a76e849117dc98c914572571b1f.svg
+│  │     ├─ mdi_home-outline.434cee271e5adce21206188fa24598d4.svg
+│  │     ├─ mdi_information.a0dd126add5e35231ff7af77d9bca14f.svg
+│  │     ├─ mdi_logout.73df9975eb2863790465d00f5a0cf485.svg
+│  │     ├─ mdi_memory.d7051115c7fb106c453398863bd76239.svg
+│  │     ├─ mdi_minus.6a19fc2c8d2eedd5c644933e3a94e05e.svg
+│  │     ├─ mdi_notifications-none.de70ff3c90b014b3cff28651ab23f2cb.svg
+│  │     ├─ mdi_phone-check-outline.62c2d3da48ce53939a1ec8b2fd48e867.svg
+│  │     ├─ mdi_phone-outline.528781322e9cb0f3b6e0bbe488c5f8df.svg
+│  │     ├─ mdi_power.53cb26d8919cc796e70d0cf5e50c15f1.svg
+│  │     ├─ mdi_qrcode.a004277d65ea9d93fbf1a58604f0906d.svg
+│  │     ├─ mdi_question-mark-circle-outline.c30c24f2e5e69d59ed2d85f508d9c5a0.svg
+│  │     ├─ mdi_radiobox-blank.81fdb2a40c3294655c7a3f15b1de02c3.svg
+│  │     ├─ mdi_radiobox-marked.5d83e9ae0d8e70a13b51c8960cc05dc6.svg
+│  │     ├─ mdi_receipt-text-edit-outline.7e18eca8b856ce0a7e79c178cab039d3.svg
+│  │     ├─ mdi_search.ea04f69059d967a3b0c06b4b41bf6ca9.svg
+│  │     ├─ mdi_service-toolbox.3d0e04e0c33f68d45eb1334a3be52df2.svg
+│  │     ├─ mdi_settings-outline.1d4f0c0131f20e1b9308cd12eb8b7029.svg
+│  │     ├─ mdi_shop-outline.2182f1ae7737e0981d6a1f349c057817.svg
+│  │     ├─ mdi_shopping-cart-arrow-down.bce074d7ec9d88abbec10760d1928d72.svg
+│  │     ├─ mdi_shopping-cart-outline.0dec29924763828e4e9b96f27cff89ed.svg
+│  │     ├─ mdi_star-outline.6456e33ed07525927c638b91996ebe43.svg
+│  │     ├─ mdi_star.b750d289c69586a4bfd19e375ae7f3b0.svg
+│  │     ├─ mdi_support.dbed53d2895965391274fdff15bcbfed.svg
+│  │     ├─ mdi_truck-delivery-outline.cf5b9b30b06310b524485f32f56c15e5.svg
+│  │     ├─ mdi_user-outline.c7770acaab996c038e6343b7ce7ac120.svg
+│  │     ├─ mdi_wallet-outline.4dd5e1c65d150e7a275549458a3b129c.svg
+│  │     ├─ mdi_wifi-strength-alert-outline.3953e934b1577f27e5afba09df47e006.svg
+│  │     ├─ monoPay.e5026fab14ddd32b9f7f1151b875391b.svg
+│  │     ├─ Pinterest.ebb3ccf7c526b70341786afeb2edf18e.svg
+│  │     ├─ PlayMarketBadge.e93c5e71c0096bbb3ced13666e997f40.svg
+│  │     ├─ PrimaryLogo.45f9a15da6f2686aac5c3fd7572910b6.svg
+│  │     ├─ reviewBannerImage.1ae2574fc5f17433f831.png
+│  │     ├─ searchNotFound.b2490241e683cc33291b.png
+│  │     ├─ SecondaryLogo.e37b0d10e730e649f936dc5304bd15f3.svg
+│  │     ├─ show.3d99f92c29102375223835e6a7f82b2f.svg
+│  │     ├─ SmallLogo.75a81ad2d73f62374ef81712efecab0a.svg
+│  │     ├─ Tiktok.7c6b09bb28c7a849b8ac85367c593126.svg
+│  │     ├─ visa.a91a74d3178c8950d47d2e8d50e32a5c.svg
+│  │     ├─ warning.8b84a330056020a69ef9938ba7dd8492.svg
+│  │     └─ Youtube.7dc22fd4eb9e38bcd4d33bdf3501772b.svg
+│  ├─ asset-manifest.json
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ public/
+│  ├─ buymePreviewOG.jpg
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ src/
+│  ├─ assets/
+│  │  ├─ icons/
+│  │  │  ├─ iconography/
+│  │  │  │  ├─ AppStoreBadge.svg
+│  │  │  │  ├─ ColoredCheckboxBlankIcon.svg
+│  │  │  │  ├─ ColoredCheckboxMarkedIcon.svg
+│  │  │  │  ├─ Facebook.svg
+│  │  │  │  ├─ iconoir-long-arrow-left-up.svg
+│  │  │  │  ├─ iconoir-reply.svg
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ Insta.svg
+│  │  │  │  ├─ mdi_access-time.svg
+│  │  │  │  ├─ mdi_add-shopping-cart.svg
+│  │  │  │  ├─ mdi_add.svg
+│  │  │  │  ├─ mdi_alert-circle-outline.svg
+│  │  │  │  ├─ mdi_arrow-down.svg
+│  │  │  │  ├─ mdi_arrow-left.svg
+│  │  │  │  ├─ mdi_arrow-right.svg
+│  │  │  │  ├─ mdi_arrow-up.svg
+│  │  │  │  ├─ mdi_attach-file.svg
+│  │  │  │  ├─ mdi_attachment-add.svg
+│  │  │  │  ├─ mdi_award.svg
+│  │  │  │  ├─ mdi_bag-personal-tag-outline.svg
+│  │  │  │  ├─ mdi_baseball-outline.svg
+│  │  │  │  ├─ mdi_bell-notification-outline.svg
+│  │  │  │  ├─ mdi_bell-ring-outline.svg
+│  │  │  │  ├─ mdi_calendar-clock-outline.svg
+│  │  │  │  ├─ mdi_calendar-month-outline.svg
+│  │  │  │  ├─ mdi_car-outline.svg
+│  │  │  │  ├─ mdi_cards-heart.svg
+│  │  │  │  ├─ mdi_cart-percent.svg
+│  │  │  │  ├─ mdi_cellphone.svg
+│  │  │  │  ├─ mdi_chat-bubble-outline.svg
+│  │  │  │  ├─ mdi_check-all.svg
+│  │  │  │  ├─ mdi_check-circle.svg
+│  │  │  │  ├─ mdi_check.svg
+│  │  │  │  ├─ mdi_checkbox-blank-outline.svg
+│  │  │  │  ├─ mdi_checkbox-marked.svg
+│  │  │  │  ├─ mdi_chevron-down.svg
+│  │  │  │  ├─ mdi_chevron-left.svg
+│  │  │  │  ├─ mdi_chevron-right.svg
+│  │  │  │  ├─ mdi_chevron-up.svg
+│  │  │  │  ├─ mdi_christmas-lights.svg
+│  │  │  │  ├─ mdi_circle-arrows.svg
+│  │  │  │  ├─ mdi_close.svg
+│  │  │  │  ├─ mdi_clothes-hanger.svg
+│  │  │  │  ├─ mdi_cloud-upload-outline.svg
+│  │  │  │  ├─ mdi_content-copy.svg
+│  │  │  │  ├─ mdi_credit-card-check-outline.svg
+│  │  │  │  ├─ mdi_cup-full-outline.svg
+│  │  │  │  ├─ mdi_delete-outline.svg
+│  │  │  │  ├─ mdi_diamond-stone.svg
+│  │  │  │  ├─ mdi_drop-check-outline.svg
+│  │  │  │  ├─ mdi_edit-outline.svg
+│  │  │  │  ├─ mdi_email-open-outline.svg
+│  │  │  │  ├─ mdi_email-outline.svg
+│  │  │  │  ├─ mdi_eye-off-outline.svg
+│  │  │  │  ├─ mdi_eye-outline.svg
+│  │  │  │  ├─ mdi_face-woman-shimmer-outline.svg
+│  │  │  │  ├─ mdi_file-image-outline.svg
+│  │  │  │  ├─ mdi_file-move-outline.svg
+│  │  │  │  ├─ mdi_file-text-multiple-outline.svg
+│  │  │  │  ├─ mdi_filter-variant.svg
+│  │  │  │  ├─ mdi_flower-tulip-outline.svg
+│  │  │  │  ├─ mdi_folder-open-outline.svg
+│  │  │  │  ├─ mdi_format-bold.svg
+│  │  │  │  ├─ mdi_format-italic.svg
+│  │  │  │  ├─ mdi_format-list-bulleted-1.svg
+│  │  │  │  ├─ mdi_format-list-bulleted.svg
+│  │  │  │  ├─ mdi_format-list-numbered.svg
+│  │  │  │  ├─ mdi_free-breakfast-outline.svg
+│  │  │  │  ├─ mdi_gender-female.svg
+│  │  │  │  ├─ mdi_gender-male.svg
+│  │  │  │  ├─ mdi_globe.svg
+│  │  │  │  ├─ mdi_hand-coin-outline.svg
+│  │  │  │  ├─ mdi_health-potion-outline.svg
+│  │  │  │  ├─ mdi_heart-outline.svg
+│  │  │  │  ├─ mdi_history.svg
+│  │  │  │  ├─ mdi_home-outline.svg
+│  │  │  │  ├─ mdi_image-multiple-outline.svg
+│  │  │  │  ├─ mdi_information-outline.svg
+│  │  │  │  ├─ mdi_information.svg
+│  │  │  │  ├─ mdi_laptop.svg
+│  │  │  │  ├─ mdi_lightbulb-on-outline.svg
+│  │  │  │  ├─ mdi_link.svg
+│  │  │  │  ├─ mdi_lock-outline.svg
+│  │  │  │  ├─ mdi_logout.svg
+│  │  │  │  ├─ mdi_map-marker-star-outline.svg
+│  │  │  │  ├─ mdi_memory.svg
+│  │  │  │  ├─ mdi_message-notification-outline.svg
+│  │  │  │  ├─ mdi_microwave-oven.svg
+│  │  │  │  ├─ mdi_minus.svg
+│  │  │  │  ├─ mdi_more-horiz.svg
+│  │  │  │  ├─ mdi_notifications-none.svg
+│  │  │  │  ├─ mdi_percent-outline.svg
+│  │  │  │  ├─ mdi_phone-check-outline.svg
+│  │  │  │  ├─ mdi_phone-outline.svg
+│  │  │  │  ├─ mdi_pine-tree-variant-outline.svg
+│  │  │  │  ├─ mdi_power.svg
+│  │  │  │  ├─ mdi_qrcode.svg
+│  │  │  │  ├─ mdi_question-mark-circle-outline.svg
+│  │  │  │  ├─ mdi_rabbit-variant-outline.svg
+│  │  │  │  ├─ mdi_radiobox-blank.svg
+│  │  │  │  ├─ mdi_radiobox-marked.svg
+│  │  │  │  ├─ mdi_receipt-text-edit-outline.svg
+│  │  │  │  ├─ mdi_scooter-electric.svg
+│  │  │  │  ├─ mdi_search.svg
+│  │  │  │  ├─ mdi_send-circle-outline.svg
+│  │  │  │  ├─ mdi_send-outline.svg
+│  │  │  │  ├─ mdi_service-toolbox.svg
+│  │  │  │  ├─ mdi_settings-outline.svg
+│  │  │  │  ├─ mdi_shop-outline.svg
+│  │  │  │  ├─ mdi_shopping-cart-arrow-down.svg
+│  │  │  │  ├─ mdi_shopping-cart-outline.svg
+│  │  │  │  ├─ mdi_shopping-cart.svg
+│  │  │  │  ├─ mdi_sofa-single-outline.svg
+│  │  │  │  ├─ mdi_spider-outline.svg
+│  │  │  │  ├─ mdi_star-half-full.svg
+│  │  │  │  ├─ mdi_star-outline.svg
+│  │  │  │  ├─ mdi_star.svg
+│  │  │  │  ├─ mdi_support.svg
+│  │  │  │  ├─ mdi_toys-outline.svg
+│  │  │  │  ├─ mdi_tray-arrow-down.svg
+│  │  │  │  ├─ mdi_truck-delivery-outline.svg
+│  │  │  │  ├─ mdi_user-outline.svg
+│  │  │  │  ├─ mdi_user.svg
+│  │  │  │  ├─ mdi_wallet-outline.svg
+│  │  │  │  ├─ mdi_web-plus.svg
+│  │  │  │  ├─ mdi_wifi-strength-alert-outline.svg
+│  │  │  │  ├─ mdi_worker-outline.svg
+│  │  │  │  ├─ Pinterest.svg
+│  │  │  │  ├─ PlayMarketBadge.svg
+│  │  │  │  ├─ PrimaryLogo.svg
+│  │  │  │  ├─ PromotersPrimaryLogo.svg
+│  │  │  │  ├─ PromotersSecondaryLogo.svg
+│  │  │  │  ├─ SecondaryLogo.svg
+│  │  │  │  ├─ share-icon.svg
+│  │  │  │  ├─ SmallLogo.svg
+│  │  │  │  ├─ tabler-pin-line.svg
+│  │  │  │  ├─ Tiktok.svg
+│  │  │  │  └─ Youtube.svg
+│  │  │  ├─ paymentIcon/
+│  │  │  │  ├─ applePay.svg
+│  │  │  │  ├─ googlePay.svg
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ masterCard.svg
+│  │  │  │  ├─ monoPay.svg
+│  │  │  │  └─ visa.svg
+│  │  │  ├─ email.svg
+│  │  │  ├─ error.svg
+│  │  │  ├─ hide.svg
+│  │  │  ├─ index.ts
+│  │  │  ├─ lock.svg
+│  │  │  ├─ show.svg
+│  │  │  ├─ userStoreDefaultIcon.svg
+│  │  │  └─ warning.svg
+│  │  ├─ images/
+│  │  │  ├─ categories/
+│  │  │  │  ├─ appliances.png
+│  │  │  │  ├─ clothes.png
+│  │  │  │  ├─ dishes.png
+│  │  │  │  ├─ female.png
+│  │  │  │  ├─ furniture.png
+│  │  │  │  ├─ gadgets.png
+│  │  │  │  ├─ male.png
+│  │  │  │  ├─ medicine.png
+│  │  │  │  ├─ military.png
+│  │  │  │  ├─ photo.png
+│  │  │  │  ├─ snuffbox.png
+│  │  │  │  ├─ sport.png
+│  │  │  │  └─ tools.png
+│  │  │  ├─ error/
+│  │  │  │  ├─ 404notFound.png
+│  │  │  │  └─ index.ts
+│  │  │  ├─ home/
+│  │  │  │  ├─ BackgroundPatternDecorative.svg
+│  │  │  │  ├─ conrolSite.png
+│  │  │  │  ├─ dropshippingWithBuyme.png
+│  │  │  │  ├─ exportAbility.png
+│  │  │  │  ├─ friendsShopping.png
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ mainBanner.png
+│  │  │  │  ├─ mobilePopUpLogo.png
+│  │  │  │  ├─ reviewBannerImage.png
+│  │  │  │  ├─ rocket.png
+│  │  │  │  ├─ slideBackground.png
+│  │  │  │  ├─ SupplierMockup.png
+│  │  │  │  ├─ SupplierProductsBackground.svg
+│  │  │  │  └─ weAreStarted.png
+│  │  │  ├─ myStoresMainGuides/
+│  │  │  │  ├─ articleDescriptionGuide.png
+│  │  │  │  ├─ articleGuide.png
+│  │  │  │  ├─ articleSeoDescription.png
+│  │  │  │  ├─ articleSeoTitle.png
+│  │  │  │  ├─ articleTitleGuide.png
+│  │  │  │  ├─ bannerDescriptionGuide.png
+│  │  │  │  ├─ bannerGuide.png
+│  │  │  │  ├─ bannerImageGuide.png
+│  │  │  │  ├─ bannerProductGuide.png
+│  │  │  │  ├─ bannerTitleGuide.png
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ storeCategoryGuide.png
+│  │  │  │  ├─ storeDescriptionGuide.png
+│  │  │  │  ├─ storeLinksGuide.png
+│  │  │  │  ├─ storeNameGuide.png
+│  │  │  │  └─ storeTemplateGuide.png
+│  │  │  ├─ promoters/
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ supplierInfoModalDesktop.png
+│  │  │  │  ├─ supplierInfoModalMobile.png
+│  │  │  │  └─ supplierProfileHeader.png
+│  │  │  ├─ threeDimension/
+│  │  │  │  ├─ cloudWarning.png
+│  │  │  │  ├─ connectionLost.png
+│  │  │  │  ├─ emptyBox.png
+│  │  │  │  ├─ emptyFolder.png
+│  │  │  │  ├─ emptyPage.png
+│  │  │  │  ├─ emptyTrash.png
+│  │  │  │  ├─ error404.png
+│  │  │  │  ├─ fileError.png
+│  │  │  │  ├─ fileNotFound.png
+│  │  │  │  ├─ imageError.png
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ linkError.png
+│  │  │  │  ├─ locationNotFound.png
+│  │  │  │  ├─ noInbox.png
+│  │  │  │  ├─ noNotification.png
+│  │  │  │  ├─ noSignal.png
+│  │  │  │  ├─ noTransaction.png
+│  │  │  │  ├─ searchNotFound.png
+│  │  │  │  ├─ serverError.png
+│  │  │  │  ├─ telegramImage.png
+│  │  │  │  ├─ timeOut.png
+│  │  │  │  └─ underMaintenance.png
+│  │  │  └─ index.ts
+│  │  └─ index.ts
+│  ├─ components/
+│  │  ├─ atom/
+│  │  │  ├─ Accordion/
+│  │  │  │  ├─ Accordion.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ AddToFavorite/
+│  │  │  │  ├─ AddToFavorite.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ AdvantageCard/
+│  │  │  │  ├─ AdvantageCard.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ AnchorScroll/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ AnimatedCounter/
+│  │  │  │  ├─ variants/
+│  │  │  │  │  ├─ FadeChars.tsx
+│  │  │  │  │  ├─ index.ts
+│  │  │  │  │  ├─ MixedChars.tsx
+│  │  │  │  │  ├─ PerChars.tsx
+│  │  │  │  │  └─ Variants.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Avatar/
+│  │  │  │  ├─ Avatar.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Badge/
+│  │  │  │  ├─ Badge.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Breadcrumb/
+│  │  │  │  ├─ Breadcrumb.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Button/
+│  │  │  │  ├─ Button.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ type.ts
+│  │  │  ├─ CautionaryModal/
+│  │  │  │  ├─ CautionaryModal.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ChangeLang/
+│  │  │  │  ├─ ChangeLang.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Checkbox/
+│  │  │  │  ├─ Checkbox.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ChipSelect/
+│  │  │  │  ├─ ChipSelect.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ ContentPreview/
+│  │  │  │  ├─ ContentPreview.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ContentScale/
+│  │  │  │  ├─ ContentScale.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Counter/
+│  │  │  │  ├─ Counter.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ DragAndDrop/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Drawer/
+│  │  │  │  ├─ Drawer.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ FrequencyModal/
+│  │  │  │  ├─ FrequencyModal.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ GuideBeacon/
+│  │  │  │  ├─ GuideBeacon.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ GuideTooltip/
+│  │  │  │  ├─ GuideTooltip.module.scss
+│  │  │  │  └─ index.tsx
+│  │  │  ├─ GuideTooltipStatic/
+│  │  │  │  ├─ GuideTooltip.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ HeaderComponent/
+│  │  │  │  ├─ HeaderComponent.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ IconAnimation/
+│  │  │  │  ├─ IconAnimation.module.scss
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ PathAnimator.tsx
+│  │  │  │  ├─ TsvgAnimator.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ IconToolTip/
+│  │  │  │  ├─ IconToolTip.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ImageCrop/
+│  │  │  │  ├─ ImageCrop.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ImageSelect/
+│  │  │  │  ├─ ImageSelect.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Input/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Input.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ JiggleWrapper/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Loader/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Loader.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Modal/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Modal.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ NavigationTab/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ NavigationTab.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ NotFoundImage/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ NotFoundImage.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Pagination/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Pagination.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ PriceRangeSlider/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ PriceRangeSlider.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ PrivateRoute/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ProductsHeader/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ProductsHeader.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ProfileHeader/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ProfileHeader.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ ProgressLine/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ProgressLine.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Radio/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Radio.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ RadioGroup/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ RadioGroup.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ RateStars/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ RateStars.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ RatingCard/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ RatingCard.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ ReviewInfo/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ReviewInfo.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Search/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Search.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Select/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Select.module.scss
+│  │  │  │  ├─ SelectMenuItem.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ SelectCategory/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ SelectCategory.module.scss
+│  │  │  │  ├─ SelectCategoryItem.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ SelectOption/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ SelectOption.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Sidebar/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Sidebar.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Skeleton/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Skeleton.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ skeletons/
+│  │  │  │  ├─ BreadcrumbCategorySkeleton/
+│  │  │  │  │  ├─ BreadcrumbCategorySkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ CardExportSkeleton/
+│  │  │  │  │  ├─ CardExportSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ CartItemSkeleton/
+│  │  │  │  │  ├─ CartItemSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ CartMerchantsSkeleton/
+│  │  │  │  │  ├─ CartMerchantsSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ CatalogItemSkeleton/
+│  │  │  │  │  ├─ CategoryItem.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ CategoryItemSkeleton/
+│  │  │  │  │  ├─ CategoryItemSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ ChatSkeleton/
+│  │  │  │  │  ├─ ChatSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ ConversationSkeleton/
+│  │  │  │  │  ├─ ConversationSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ ExportItemsSkeleton/
+│  │  │  │  │  ├─ ExportItemsSkeleton.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ InformationSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ InformationSkeleton.module.scss
+│  │  │  │  ├─ MyExportsSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ MyExportsSkeleton.module.scss
+│  │  │  │  ├─ MyStoresSkeletons/
+│  │  │  │  │  ├─ MyStoresCardSkeleton.tsx
+│  │  │  │  │  ├─ MyStoresSkeletons.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ NotificationsSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ NotificationSkeleton.module.scss
+│  │  │  │  ├─ OrderCardSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ OrderCardSkeleton.module.scss
+│  │  │  │  ├─ OrderItemSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ OrderItemSkeleton.module.scss
+│  │  │  │  ├─ PrivacyPolicySkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ PrivacyPolicySkeleton.module.scss
+│  │  │  │  ├─ ProductCardSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ ProductCardSkeleton.module.scss
+│  │  │  │  ├─ ProductDetailsSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ ProductSkeleton.module.scss
+│  │  │  │  ├─ ProductSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ ProductSkeleton.module.scss
+│  │  │  │  ├─ ProfileHeaderSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ ProfileHeaderSkeleton.module.scss
+│  │  │  │  ├─ ReviewCardSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ ReviewCardSkeleton.module.scss
+│  │  │  │  ├─ RoundedCardSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ RoundedCardSkeleton.module.scss
+│  │  │  │  ├─ StoreHeaderSkeleton/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ StoreHeaderSkeleton.module.scss
+│  │  │  │  ├─ ThreadItemSkeleton/
+│  │  │  │  │  ├─ ChatSkeleton.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ index.ts
+│  │  │  │  └─ types.ts
+│  │  │  ├─ StepManager/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ StepManager.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ SupplierBreadcrumbs/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ SupplierBreadcrumbs.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ SupplierEmptyState/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ SupplierEmptyState.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ SupplierSwitch/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ SupplierSwitch.module.scss
+│  │  │  │  ├─ SwitchMenu.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Tabs/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Tabs.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Text/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ TextArea/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ TextArea.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.tsx
+│  │  │  ├─ ToggleSwitch/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ToggleSwitch.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ TransferDirection/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ TransferDirection.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ WrappedIcon/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ WrappedIcon.module.scss
+│  │  │  └─ index.ts
+│  │  ├─ layout/
+│  │  │  ├─ AuthModal/
+│  │  │  │  ├─ AuthModal.module.scss
+│  │  │  │  ├─ Confirm.tsx
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Login.tsx
+│  │  │  │  ├─ Register.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Footer/
+│  │  │  │  ├─ Footer.module.scss
+│  │  │  │  └─ index.tsx
+│  │  │  ├─ Header/
+│  │  │  │  ├─ Header.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ MobileNavBar/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ MobileNavBar.module.scss
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ PageLayout/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ PageLayout.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  └─ index.ts
+│  │  ├─ molecules/
+│  │  │  ├─ balance/
+│  │  │  │  ├─ BalanceCard/
+│  │  │  │  │  ├─ BalanceCard.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ BalanceDetails/
+│  │  │  │  │  ├─ BalanceDetails.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ TopUpBalanceModal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ TopUpBalanceModal.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ TransferBalanceModal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ TransferBalanceModal.module.scss
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ BottomSheetMobile/
+│  │  │  │  ├─ BottomSheetMobile.module.scss
+│  │  │  │  ├─ DrawerChild.tsx
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Cabinet/
+│  │  │  │  ├─ Cabinet.module.scss
+│  │  │  │  ├─ CabinetItem.tsx
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ cart/
+│  │  │  │  ├─ CartItem/
+│  │  │  │  │  ├─ CartItem.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ Catalog/
+│  │  │  │  ├─ Catalog.module.scss
+│  │  │  │  ├─ CatalogMobile.tsx
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ CategoriesTree/
+│  │  │  │  ├─ CategoriesTree.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ chat/
+│  │  │  │  ├─ ChatMessage/
+│  │  │  │  │  ├─ ChatMessage.module.scss
+│  │  │  │  │  ├─ ChatMessageEdit.tsx
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ MediaMessage.tsx
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ ThreadItem/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ThreadItem.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ CodeNotComing/
+│  │  │  │  ├─ CodeNotComing.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ CustomerReviewModal/
+│  │  │  │  ├─ CustomerReviewModal.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ DetailsModal/
+│  │  │  │  ├─ DetailModal.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ DownloadButton/
+│  │  │  │  ├─ DownloadButton.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ EmptyState/
+│  │  │  │  ├─ EmptyState.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ExportDataButton/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ExportProgress/
+│  │  │  │  ├─ ExportProgress.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ ExportStep/
+│  │  │  │  ├─ ExportStep.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ FilterSidebar/
+│  │  │  │  ├─ FilterSidebar.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ Gallery/
+│  │  │  │  ├─ GalleryScrollButtons/
+│  │  │  │  │  ├─ GalleryScrollButtons.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ Gallery.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ GoToProfileBanner/
+│  │  │  │  ├─ GoToProfileBanner.module.scss
+│  │  │  │  └─ index.tsx
+│  │  │  ├─ Helmet/
+│  │  │  │  ├─ Helmet.module.scss
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ home/
+│  │  │  │  ├─ ControlSiteBlock/
+│  │  │  │  │  ├─ TextBlock/
+│  │  │  │  │  │  ├─ ControlBlock.module.scss
+│  │  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  │  └─ type.ts
+│  │  │  │  │  ├─ ControlSiteBLock.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ HomePromoterState/
+│  │  │  │  │  ├─ HomePromoterState.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ MainBanner/
+│  │  │  │  │  ├─ slides/
+│  │  │  │  │  │  ├─ Dropshipping/
+│  │  │  │  │  │  │  ├─ DropShippingSlide.module.scss
+│  │  │  │  │  │  │  └─ index.tsx
+│  │  │  │  │  │  ├─ SupplierProducts/
+│  │  │  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  │  │  └─ SupplierProducts.module.scss
+│  │  │  │  │  │  ├─ WeAreStarted/
+│  │  │  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  │  │  └─ WeAreStartedSlide.module.scss
+│  │  │  │  │  │  └─ index.ts
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ NeedHelp/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ NeedHelp.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ OurAdvantages/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OurAdvantages.module.scss
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ ReviewBanner/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ ReviewBanner.module.scss
+│  │  │  │  ├─ ShoppingBanner/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ShoppingBanner.module.scss
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ TopTabs/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ TopTabs.module.scss
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ UsualCustomer/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ UsualCustomer.module.scss
+│  │  │  │  └─ index.ts
+│  │  │  ├─ MyStorePagination/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ pagination.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ MyStoresModal/
+│  │  │  │  ├─ CreateStoreModal/
+│  │  │  │  │  ├─ CreateMyStoreModal.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ NotAllowedPayment/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ NotAllowedPayment.module.scss
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ notification/
+│  │  │  │  ├─ NotificationItem/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ NotificationItem.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ order/
+│  │  │  │  ├─ OrderBlackListModal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderBlackListModal.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ OrderCard/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderCard.module.scss
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ OrderDetails/
+│  │  │  │  │  ├─ Detail.tsx
+│  │  │  │  │  ├─ EditOrder.tsx
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderDetails.module.scss
+│  │  │  │  │  ├─ ProductEdit.tsx
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ OrderDuplicateModal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderDuplicateModal.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ OrderedProduct/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderedProduct.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ OrderResultModal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderResultModal.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ OrderTotal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ OrderTotal.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ OrderItem/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ OrderItem.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Pillow/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ Pillow.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ PolicyOptions/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ PolicyOptions.module.scss
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  ├─ ProductCard/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ProductCard.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ productDetails/
+│  │  │  │  ├─ CartAddedSuccessfully/
+│  │  │  │  │  ├─ CartAddedSuccessfully.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ DeliveryAndPayment/
+│  │  │  │  │  ├─ DeliveryAndPayment.module.scss
+│  │  │  │  │  └─ index.tsx
+│  │  │  │  ├─ ProductDetailImages/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductDetailImages.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ ProductDetailsModal/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductDetailsModal.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ ProductDetailsSupport/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductDetailsSupport.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ ProductOption/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductOption.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ ProductStoreItem/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductStoreItem.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ SubscribeToProduct/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ SubscribeToProduct.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ RoundedCard/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ RoundedCard.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ RouteLoader/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ RouteLoader.module.scss
+│  │  │  ├─ settings/
+│  │  │  │  ├─ SmsBalance/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ SmsBalance.module.scss
+│  │  │  │  ├─ tabs/
+│  │  │  │  │  ├─ MainSettings/
+│  │  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  │  └─ MainSettings.module.scss
+│  │  │  │  │  ├─ NotificationSettings/
+│  │  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  │  ├─ NotificationsSettings.module.scss
+│  │  │  │  │  │  ├─ types.ts
+│  │  │  │  │  │  └─ utils.ts
+│  │  │  │  │  └─ index.ts
+│  │  │  │  ├─ TelegramConnect/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ TelegramConnect.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  └─ index.ts
+│  │  │  ├─ ShareButton/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ ShareButton.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ StoreHeader/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  ├─ StoreHeader.module.scss
+│  │  │  │  └─ types.ts
+│  │  │  ├─ SupplierInfoModal/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ SupplierInfoModal.module.scss
+│  │  │  ├─ SupplierReviewPage/
+│  │  │  │  ├─ index.tsx
+│  │  │  │  └─ SupplierReviewPage.module.scss
+│  │  │  ├─ UserStore/
+│  │  │  │  ├─ ArticleItem/
+│  │  │  │  │  ├─ ArticleItem.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ ArticleLangButton/
+│  │  │  │  │  ├─ ArticleLangButton.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ BannerCard/
+│  │  │  │  │  ├─ BannerCard.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ BannerItem/
+│  │  │  │  │  ├─ BannerItem.module.scss
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ EditProductCard/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductCard.module.scss
+│  │  │  │  │  └─ types.ts
+│  │  │  │  ├─ ProductItem/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ ProductItem.module.scss
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ utils.ts
+│  │  │  │  ├─ UserStoreCard/
+│  │  │  │  │  ├─ index.tsx
+│  │  │  │  │  ├─ types.ts
+│  │  │  │  │  └─ UserStoreCard.module.scss
+│  │  │  │  └─ index.ts
+│  │  │  └─ index.ts
+│  │  └─ index.ts
+│  ├─ config/
+│  │  ├─ constant/
+│  │  │  ├─ environment.tsx
+│  │  │  ├─ helper.ts
+│  │  │  ├─ index.ts
+│  │  │  └─ pusher.ts
+│  │  ├─ env/
+│  │  │  ├─ constants.local.ts
+│  │  │  ├─ constants.prod.ts
+│  │  │  ├─ constants.stage.ts
+│  │  │  └─ index.ts
+│  │  └─ endpoint.ts
+│  ├─ hooks/
+│  │  ├─ index.ts
+│  │  ├─ useBeforeUnload.ts
+│  │  ├─ useButtonClickScroll.ts
+│  │  ├─ useCategoryBreadcrumb.ts
+│  │  ├─ useCopyToClipboard.ts
+│  │  ├─ UseDebounce.ts
+│  │  ├─ useDownloadFiles.ts
+│  │  ├─ useDropdownMenu.ts
+│  │  ├─ useFetchSequentially.ts
+│  │  ├─ useIsSupplier.ts
+│  │  ├─ useLanguageTranslation.ts
+│  │  ├─ useLockBodyScroll.ts
+│  │  ├─ useMaintenanceWorks.ts
+│  │  ├─ useOnClickOutside.ts
+│  │  ├─ usePagination.ts
+│  │  ├─ usePaymentRedirect.tsx
+│  │  ├─ usePusher.ts
+│  │  ├─ useRelativePercentagePosition.ts
+│  │  ├─ useResponsive.ts
+│  │  ├─ useScrollToTop.ts
+│  │  ├─ useSupplierCategoryBreadcrumb.ts
+│  │  ├─ useTypedSelector.ts
+│  │  └─ useTypingPlaceholder.ts
+│  ├─ libraries/
+│  │  ├─ axios/
+│  │  │  └─ index.ts
+│  │  ├─ locales/
+│  │  │  ├─ ru.json
+│  │  │  └─ uk.json
+│  │  ├─ motion/
+│  │  │  ├─ defaultTransition.ts
+│  │  │  └─ index.tsx
+│  │  ├─ redux/
+│  │  │  └─ index.ts
+│  │  ├─ router/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ routes.ts
+│  │  │  └─ types.ts
+│  │  └─ toastify/
+│  │     ├─ index.tsx
+│  │     ├─ Toast.module.scss
+│  │     ├─ toastServices.tsx
+│  │     ├─ ToastTexts.tsx
+│  │     └─ types.ts
+│  ├─ pages/
+│  │  ├─ AddStore/
+│  │  │  ├─ AddArticle.tsx
+│  │  │  ├─ AddBanner.tsx
+│  │  │  ├─ AddStore.module.scss
+│  │  │  ├─ AddStoreData.tsx
+│  │  │  ├─ EditProduct.tsx
+│  │  │  ├─ guide.tsx
+│  │  │  ├─ index.tsx
+│  │  │  ├─ types.ts
+│  │  │  └─ utils.ts
+│  │  ├─ Balance/
+│  │  │  ├─ Balance.module.scss
+│  │  │  ├─ index.tsx
+│  │  │  └─ utils.ts
+│  │  ├─ Cart/
+│  │  │  ├─ Cart.module.scss
+│  │  │  ├─ CartMerchants.tsx
+│  │  │  ├─ index.tsx
+│  │  │  └─ types.ts
+│  │  ├─ Categories/
+│  │  │  ├─ Categories.module.scss
+│  │  │  ├─ CategoryItem.tsx
+│  │  │  ├─ index.tsx
+│  │  │  └─ types.ts
+│  │  ├─ Chat/
+│  │  │  ├─ Conversations/
+│  │  │  │  ├─ Conversation.tsx
+│  │  │  │  ├─ ConversationHeader.tsx
+│  │  │  │  ├─ ConversationWrapper.tsx
+│  │  │  │  ├─ ImagesPreSend.tsx
+│  │  │  │  ├─ SendMessage.tsx
+│  │  │  │  └─ types.ts
+│  │  │  ├─ Chat.module.scss
+│  │  │  ├─ index.tsx
+│  │  │  └─ Threads.tsx
+│  │  ├─ ContactUs/
+│  │  │  ├─ ContactUs.module.scss
+│  │  │  ├─ index.tsx
+│  │  │  └─ utils.ts
+│  │  ├─ Error/
+│  │  │  ├─ Error.module.scss
+│  │  │  └─ index.tsx
+│  │  ├─ FAQ/
+│  │  │  ├─ FAQ.module.scss
+│  │  │  ├─ index.tsx
+│  │  │  └─ utils.ts
+│  │  ├─ Home/
+│  │  │  ├─ Home.module.scss
+│  │  │  ├─ index.tsx
+│  │  │  └─ utils.ts
+│  │  ├─ Information/
+│  │  │  ├─ index.tsx
+│  │  │  └─ Information.module.scss
+│  │  ├─ ManagePrices/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ ManagePrices.module.scss
+│  │  │  ├─ types.ts
+│  │  │  └─ utils.ts
+│  │  ├─ MyExports/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ MyExports.module.scss
+│  │  │  └─ types.ts
+│  │  ├─ MyOrders/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ MyOrders.module.scss
+│  │  │  └─ utils.ts
+│  │  ├─ MyStores/
+│  │  │  ├─ Dashboard/
+│  │  │  │  └─ middle/
+│  │  │  │     ├─ middle.module.scss
+│  │  │  │     ├─ middle.tsx
+│  │  │  │     └─ types.ts
+│  │  │  ├─ index.tsx
+│  │  │  └─ MyStores.module.scss
+│  │  ├─ Notification/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ Notification.module.scss
+│  │  │  ├─ types.ts
+│  │  │  └─ utils.ts
+│  │  ├─ Ordering/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ Ordering.module.scss
+│  │  │  └─ utils.ts
+│  │  ├─ PrivacyPolicy/
+│  │  │  ├─ index.tsx
+│  │  │  └─ PrivacyPolicy.module.scss
+│  │  ├─ ProductDetails/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ ProductDetails.module.scss
+│  │  │  ├─ types.ts
+│  │  │  └─ utils.ts
+│  │  ├─ Products/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ Products.module.scss
+│  │  │  └─ utils.ts
+│  │  ├─ Profile/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ Profile.module.scss
+│  │  │  └─ types.ts
+│  │  ├─ Settings/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ Settings.module.scss
+│  │  │  └─ utils.ts
+│  │  ├─ SupplierDetails/
+│  │  │  ├─ index.tsx
+│  │  │  └─ SupplierDetails.module.scss
+│  │  ├─ SupplierProducts/
+│  │  │  ├─ index.tsx
+│  │  │  ├─ SupplierProducts.module.scss
+│  │  │  └─ utils.ts
+│  │  └─ Wishlist/
+│  │     ├─ index.tsx
+│  │     └─ Wishlist.module.scss
+│  ├─ store/
+│  │  ├─ auth/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ cart/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ categories/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ chat/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ customer/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ export-data/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ filter/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ global/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ notification/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ order/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ products/
+│  │  │  ├─ action.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ select/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ shop/
+│  │  │  ├─ actions.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ selectors.ts
+│  │  │  └─ types.ts
+│  │  ├─ suppliers/
+│  │  │  ├─ customers/
+│  │  │  │  ├─ actions.ts
+│  │  │  │  ├─ index.ts
+│  │  │  │  ├─ selectors.ts
+│  │  │  │  ├─ types.ts
+│  │  │  │  └─ utils.ts
+│  │  │  └─ products/
+│  │  │     ├─ actions.ts
+│  │  │     ├─ index.ts
+│  │  │     ├─ selectors.ts
+│  │  │     └─ types.ts
+│  │  ├─ index.ts
+│  │  ├─ siteCategorySlice.ts
+│  │  └─ store.ts
+│  ├─ styles/
+│  │  ├─ colors.scss
+│  │  ├─ fonts.scss
+│  │  ├─ index.global.scss
+│  │  ├─ lib.scss
+│  │  ├─ local.scss
+│  │  ├─ mixins.scss
+│  │  ├─ typography.scss
+│  │  └─ vars.scss
+│  ├─ types/
+│  │  ├─ globalTypes.ts
+│  │  ├─ index.ts
+│  │  └─ store.ts
+│  ├─ utils/
+│  │  ├─ helperFunctions/
+│  │  │  ├─ cookies.ts
+│  │  │  ├─ formatPhoneNumber.ts
+│  │  │  ├─ getCroppedImage.ts
+│  │  │  ├─ getDiscountPercentage.ts
+│  │  │  ├─ handleCopyClick.ts
+│  │  │  ├─ helpers.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ phoneMaskAndValid.ts
+│  │  │  ├─ splitMessageSmart.ts
+│  │  │  └─ types.ts
+│  │  ├─ schemas/
+│  │  │  ├─ exportDataSchema.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ loginScheme.ts
+│  │  │  ├─ registerScheme.ts
+│  │  │  ├─ savePassword.ts
+│  │  │  └─ updateUserInfo.ts
+│  │  ├─ shared/
+│  │  │  ├─ global.ts
+│  │  │  ├─ index.ts
+│  │  │  ├─ links.ts
+│  │  │  └─ socialMedias.ts
+│  │  └─ index.ts
+│  ├─ App.tsx
+│  ├─ declaration.d.ts
+│  ├─ i18n.ts
+│  ├─ index.tsx
+│  └─ react-app-env.d.ts
+├─ .env
+├─ .env.example
+├─ .eslintignore
+├─ .eslintrc.json
+├─ .gitignore
+├─ .prettierignore
+├─ .prettierrc
+├─ package-lock.json
+├─ package.json
+├─ README.md
+├─ tsconfig.json
+└─ webpack.config.ts
