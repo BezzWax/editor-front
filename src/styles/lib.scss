@@ -1,0 +1,55 @@
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
+
+//drawer-edit
+.rdw-link-modal {
+  position: absolute;
+  top: 35px;
+  left: -162px;
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  height: 205px;
+  border: 1px solid #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px 4px 10px -2px #1018281a;
+}
+
+//drawer-edit
+.rdw-link-modal {
+  position: absolute;
+  top: 35px;
+  left: -162px;
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  height: 205px;
+  border: 1px solid #f1f1f1;
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0px 4px 10px -2px #1018281a;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}

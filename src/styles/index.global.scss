@@ -1,0 +1,15 @@
+// Local css base
+@use './lib' as *;
+@use './vars' as *;
+@use './fonts' as *;
+@use './local' as *;
+@use './colors' as *;
+@use './mixins' as *;
+@use './typography' as *;
+
+// Swiper global styles
+@use 'swiper/scss';
+@use 'swiper/css/navigation';
+@use 'swiper/css/pagination';
+@use 'swiper/css/zoom';
+@use 'swiper/css/scrollbar';
