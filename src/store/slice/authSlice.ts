@@ -8,12 +8,12 @@ interface User {
 
 interface AuthState {
   user: User | null
-  token: string | null
+  access_token: string | null
 }
 
 const initialState: AuthState = {
   user: null,
-  token: null,
+  access_token: null,
 }
 
 const authSlice = createSlice({
@@ -21,12 +21,15 @@ const authSlice = createSlice({
   initialState,
   reducers: {
     setAuthData(state, action: PayloadAction<AuthState>) {
+      console.log(action)
       state.user = action.payload.user
-      state.token = action.payload.token
+      state.access_token = action.payload.access_token
+
+      localStorage.setItem('token', action.payload.access_token || '')
     },
     logout(state) {
       state.user = null
-      state.token = null
+      state.access_token = null
     },
   },
 })

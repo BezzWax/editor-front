@@ -6,20 +6,23 @@ export interface RegisterDto {
   password: string
 }
 
+export interface LoginDto {
+  email: string
+  password: string
+}
+
 export interface AuthResponse {
   user: {
     id: number
     email: string
     username: string
   }
-  token: string
+  access_token: string
 }
 
 export const authApi = createApi({
   reducerPath: 'authApi',
-  baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3000',
-  }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000' }),
   endpoints: (builder) => ({
     registerUser: builder.mutation<AuthResponse, RegisterDto>({
       query: (body) => ({
@@ -28,7 +31,14 @@ export const authApi = createApi({
         body,
       }),
     }),
+    loginUser: builder.mutation<AuthResponse, LoginDto>({
+      query: (body) => ({
+        url: '/auth/login',
+        method: 'POST',
+        body,
+      }),
+    }),
   }),
 })
 
-export const { useRegisterUserMutation } = authApi
+export const { useRegisterUserMutation, useLoginUserMutation } = authApi
