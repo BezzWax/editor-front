@@ -1,10 +1,13 @@
-export const getUserToken = () => {
-  const userTokenString = localStorage.getItem('token')
-  if (!userTokenString) return null
-
-  const userToken = JSON.parse(userTokenString)
-
-  return userToken
+export const getUserToken = (): string | null => {
+  try {
+    const userTokenString = localStorage.getItem('token')
+    if (!userTokenString) return null
+    
+    return userTokenString
+  } catch (error) {
+    console.error('Error getting user token:', error)
+    return null
+  }
 }
 
 export const pagesToHideFooter = [{ isHideOnlyMobile: true, pathname: '/cart' }]

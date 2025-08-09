@@ -16,6 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { FC, useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import { AuthDrawer } from "components";
+import { getUserToken } from "utils";
 
 const Header: FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -24,7 +25,8 @@ const Header: FC = () => {
 
   const [authDrawerOpen, setAuthDrawerOpen] = useState(false);
 
-  const isAuth = false; // TODO: заменить на Redux
+  const token = getUserToken();
+  const isAuth = !!token;
 
   const handleAuthDrawer = () => {
     setAuthDrawerOpen(!authDrawerOpen);
