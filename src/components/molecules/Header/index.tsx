@@ -17,8 +17,11 @@ import { FC, useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import { AuthDrawer } from "components";
 import { getUserToken } from "utils";
+import { useNavigate } from "react-router-dom";
+import { ERoutePaths } from "libraries/router/types";
 
 const Header: FC = () => {
+  const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -32,11 +35,15 @@ const Header: FC = () => {
     setAuthDrawerOpen(!authDrawerOpen);
   };
 
+  const handleNavigate = () => {
+    navigate(ERoutePaths.Profile);
+  };
+
   const user = { name: "Eugene", avatarUrl: "" };
 
   const navItems = isAuth
-    ? [{ label: "Статьи" }]
-    : [{ label: "Статьи" }, { label: "Войти", action: handleAuthDrawer }];
+    ? [{ label: "Профіль", action: handleNavigate }]
+    : [{ label: "Профіль" }, { label: "Войти", action: handleAuthDrawer }];
 
   const handleDrawerToggle = () => setDrawerOpen(!drawerOpen);
 
