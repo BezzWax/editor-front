@@ -2,11 +2,24 @@
 import { FC, useState, useMemo } from "react";
 import ReactQuill from "react-quill-new";
 import "react-quill-new/dist/quill.snow.css";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, TextField } from "@mui/material";
 
-const ArticleEditor: FC = () => {
+import {
+  useCreateArticleMutation,
+  useUploadImageMutation,
+} from "store/services/articlesApi";
+
+import { TArticleEditor } from "./types";
+import { getUserData } from "utils";
+
+const ArticleEditor: FC<TArticleEditor> = ({ onChange }) => {
+  const user = getUserData();
+  const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [preview, setPreview] = useState(false);
+
+  const [uploadImage] = useUploadImageMutation();
+  const [createArticle, { isLoading }] = useCreateArticleMutation();
 
   const imageHandler = () => {
     const input = document.createElement("input");
@@ -21,21 +34,19 @@ const ArticleEditor: FC = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("/api/upload", {
-        method: "POST",
-        body: formData,
-      });
-      const data = await res.json();
-
-      const quill = (window as any).quillRef;
-      const range = quill.getSelection(true);
-      const imageUrl = data.url || data.path || ""; // подставь, что реально возвращает сервер
-
-      if (imageUrl) {
-        quill.insertEmbed(range.index, "image", imageUrl, "user");
+      try {
+        const data = await uploadImage(formData).unwrap();
+        const quill = (window as any).quillRef;
+        const range = quill.getSelection(true);
+        quill.insertEmbed(
+          range.index,
+          "image",
+          `http://localhost:3000${data.url}`,
+          "user"
+        );
         quill.setSelection(range.index + 1);
-      } else {
-        alert("Ошибка загрузки изображения");
+      } catch (err: any) {
+        console.log("Ошибка загрузки изображения", err);
       }
     };
   };
@@ -53,19 +64,39 @@ const ArticleEditor: FC = () => {
           [{ color: [] }, { background: [] }],
           ["clean"],
         ],
-        handlers: {
-          image: imageHandler,
-        },
+        handlers: { image: imageHandler },
       },
     }),
     []
   );
+
+  const handleSave = async () => {
+    try {
+      await createArticle({ title, content, author: user.username }).unwrap();
+      alert("✅ Статья сохранена!");
+      setTitle("");
+      setContent("");
+      onChange();
+    } catch (err: any) {
+      console.log("❌ Ошибка сохранения статьи", err);
+      onChange();
+    }
+  };
 
   return (
     <Box>
       <Typography variant="h5" sx={{ mb: 2 }}>
         Редактор статьи
       </Typography>
+
+      <TextField
+        fullWidth
+        label="Заголовок статьи"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        sx={{ mb: 2 }}
+      />
+
       {!preview ? (
         <ReactQuill
           value={content}
@@ -91,8 +122,8 @@ const ArticleEditor: FC = () => {
       )}
 
       <Box sx={{ display: "flex", gap: 2, mt: 10 }}>
-        <Button variant="contained" onClick={() => console.log(content)}>
-          Сохранить
+        <Button variant="contained" onClick={handleSave} disabled={isLoading}>
+          {isLoading ? "Сохраняю..." : "Сохранить"}
         </Button>
         <Button variant="outlined" onClick={() => setPreview((p) => !p)}>
           {preview ? "Редактировать" : "Предпросмотр"}

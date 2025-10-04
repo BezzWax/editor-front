@@ -10,6 +10,14 @@ export const getUserToken = (): string | null => {
   }
 }
 
+export const getUserData = () => {
+  const user = localStorage.getItem('user')
+
+  if(!user) return null
+
+  return JSON.parse(user)
+}
+
 export const pagesToHideFooter = [{ isHideOnlyMobile: true, pathname: '/cart' }]
 
 export const getCookie = (name: string) => {

@@ -17,7 +17,7 @@ export interface AuthResponse {
     email: string
     username: string
   }
-  access_token: string
+  token: string
 }
 
 export const authApi = createApi({

@@ -12,40 +12,36 @@ import {
   DialogContent,
 } from "@mui/material";
 import { ArticleEditor } from "components";
+import { getUserData } from "utils";
 
 const Profile: FC = () => {
+  const user = getUserData();
   const [editing, setEditing] = useState(false);
-  const [name, setName] = useState("John Doe");
-  const [email, setEmail] = useState("john@example.com");
 
   return (
     <Box p={4} maxWidth={600} mx="auto">
       <Paper elevation={3} sx={{ p: 3, borderRadius: 3 }}>
         <Stack spacing={2} alignItems="center">
-          <Avatar sx={{ width: 80, height: 80 }}>{name.charAt(0)}</Avatar>
+          <Avatar sx={{ width: 80, height: 80 }}>
+            {user?.username.charAt(0)}
+          </Avatar>
           {editing ? (
             <>
-              <TextField
-                label="Имя"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                fullWidth
-              />
+              <TextField label="Name" value={user?.username} fullWidth />
               <TextField
                 label="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                value={user?.email}
                 fullWidth
               />
             </>
           ) : (
             <>
-              <Typography variant="h5">{name}</Typography>
-              <Typography color="text.secondary">{email}</Typography>
+              <Typography variant="h5">{user?.username}</Typography>
+              <Typography color="text.secondary">{user?.email}</Typography>
             </>
           )}
           <Button variant="contained" onClick={() => setEditing(!editing)}>
-            {editing ? "Сохранить" : "Редактировать"}
+            {editing ? "Save" : "Create article"}
           </Button>
         </Stack>
       </Paper>
@@ -56,9 +52,9 @@ const Profile: FC = () => {
         maxWidth="md"
         fullWidth
       >
-        <DialogTitle>Новая статья</DialogTitle>
+        <DialogTitle>New article</DialogTitle>
         <DialogContent>
-          <ArticleEditor />
+          <ArticleEditor onChange={() => setEditing(!editing)} />
         </DialogContent>
       </Dialog>
     </Box>
