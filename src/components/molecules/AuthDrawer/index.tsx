@@ -44,6 +44,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
         email: loginEmail,
         password: loginPassword,
       }).unwrap();
+
       dispatch(setAuthData(response));
       toast.success(`Добро пожаловать, ${response.user.username}!`);
       onClose();

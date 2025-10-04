@@ -1,6 +1,6 @@
 import type { FC } from "react"
 import { Container } from "@mui/material"
-import { Header } from "components"
+import { AllArticles, Header } from "components"
 
 const Home: FC = () => {
   return (
@@ -9,6 +9,8 @@ const Home: FC = () => {
       <Container maxWidth="md">
         <h1>Главная страница</h1>
         <p>Добро пожаловать в наш редактор!</p>
+
+        <AllArticles />
       </Container>
     </>
   )
