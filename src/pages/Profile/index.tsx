@@ -13,10 +13,15 @@ import {
 } from "@mui/material";
 import { ArticleEditor } from "components";
 import { getUserData } from "utils";
+import { useGetArticleByUserIdQuery } from "store/services/articlesApi";
 
 const Profile: FC = () => {
   const user = getUserData();
   const [editing, setEditing] = useState(false);
+
+  const { data } = useGetArticleByUserIdQuery(user.id)
+
+  console.log(data)
 
   return (
     <Box p={4} maxWidth={600} mx="auto">

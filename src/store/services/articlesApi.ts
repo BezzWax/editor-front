@@ -27,6 +27,18 @@ export const articlesApi = createApi({
     getArticles: builder.query<any[], void>({
       query: () => "/articles",
     }),
+    getArticleById: builder.query<any, any>({
+      query: (id) => ({
+        url: `/articles/${id}`,
+        method: "GET",
+      }),
+    }),
+    getArticleByUserId: builder.query<any, any>({
+      query: (id) => ({
+        url: `/articles/user/${id}`,
+        method: "GET",
+      }),
+    }),
   }),
 });
 
@@ -34,4 +46,6 @@ export const {
   useUploadImageMutation,
   useCreateArticleMutation,
   useGetArticlesQuery,
+  useGetArticleByIdQuery,
+  useGetArticleByUserIdQuery,
 } = articlesApi;
