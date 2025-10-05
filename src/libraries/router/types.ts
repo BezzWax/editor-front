@@ -13,4 +13,5 @@ export const ERoutePaths = {
   Error: '*',
   Home: '/',
   Profile: '/profile',
+  Article: '/article/:id'
 } as const

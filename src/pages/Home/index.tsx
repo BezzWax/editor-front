@@ -1,19 +1,23 @@
-import type { FC } from "react"
-import { Container } from "@mui/material"
-import { AllArticles, Header } from "components"
+import type { FC } from 'react';
+import { Container } from '@mui/material';
+import { AllArticles, Header } from 'components';
 
 const Home: FC = () => {
   return (
     <>
       <Header />
-      <Container maxWidth="md">
-        <h1>Главная страница</h1>
-        <p>Добро пожаловать в наш редактор!</p>
-
+      <Container
+        maxWidth="lg"
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
         <AllArticles />
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
