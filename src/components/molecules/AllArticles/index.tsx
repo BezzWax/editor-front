@@ -1,21 +1,23 @@
-import { Container, Grid, Typography } from "@mui/material";
-import { ArticleCard } from "components";
 import { FC } from "react";
-import { useGetArticlesQuery } from "store/services/articlesApi";
-import { IArticle } from "./types";
+import { Container, Grid, Typography } from "@mui/material";
 
-const AllArticles: FC = () => {
-  const { data: articles, isLoading, error } = useGetArticlesQuery();
+import { ArticleCard } from "components";
 
-  if (isLoading) return <Typography>Загрузка...</Typography>;
-  if (error) return <Typography>Ошибка загрузки статей</Typography>;
-  if (!articles || articles.length === 0) return <Typography>Статей нет</Typography>;
+import type { IArticle, TAllArticles } from "./types";
+
+const AllArticles: FC<TAllArticles> = ({ data, loading, error, onChange }) => {
+  if (loading) return <Typography>Loading...</Typography>;
+  if (error) return <Typography>Error</Typography>;
+  if (!data || data.length === 0) return <Typography>No articles</Typography>;
 
   return (
     <Container sx={{ p: 3 }}>
       <Grid container spacing={3}>
-        {articles.map((article: IArticle) => (
-          <Grid key={article._id}>
+        {data?.map((article: IArticle) => (
+          <Grid
+            key={article._id}
+            onClick={() => onChange && onChange(article._id)}
+          >
             <ArticleCard article={article} />
           </Grid>
         ))}
@@ -24,4 +26,4 @@ const AllArticles: FC = () => {
   );
 };
 
-export default AllArticles
+export default AllArticles;

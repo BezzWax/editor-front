@@ -1,5 +1,3 @@
-
-
 export interface IArticle {
   _id: string;
   title: string;
@@ -9,3 +7,10 @@ export interface IArticle {
   updatedAt: string;
   __v: number;
 }
+
+export type TAllArticles = {
+  data?: IArticle[];
+  loading?: boolean
+  error?: boolean
+  onChange?: (id: string) => void
+};

@@ -69,7 +69,12 @@ const ArticleCard: FC<{ article: IArticleCard }> = ({ article }) => {
         )}
 
         <CardContent sx={{ flexGrow: 1 }}>
-          <Typography component="p" gutterBottom sx={{ fontWeight: "bold" }}>
+          <Typography
+            className={styles.wrapper_title}
+            component="p"
+            gutterBottom
+            sx={{ fontWeight: "bold" }}
+          >
             {article.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
