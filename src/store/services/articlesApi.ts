@@ -35,7 +35,7 @@ export const articlesApi = createApi({
     }),
     getArticleByUserId: builder.query<any, any>({
       query: (id) => ({
-        url: `/articles/user/${id}`,
+        url: `/articles/author/${id}`,
         method: "GET",
       }),
     }),

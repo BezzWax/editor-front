@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { FC, useEffect, useState } from "react";
 import { useTheme } from "@mui/material/styles";
 import { AuthDrawer } from "components";
-import { getUserToken } from "utils";
+import { getUserData, getUserToken } from "utils";
 import { useNavigate } from "react-router-dom";
 import { ERoutePaths } from "libraries/router/types";
 
@@ -24,6 +24,7 @@ const Header: FC = () => {
   const navigate = useNavigate();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
+  const user = getUserData()
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const [authDrawerOpen, setAuthDrawerOpen] = useState(false);
@@ -39,11 +40,9 @@ const Header: FC = () => {
     navigate(ERoutePaths.Profile);
   };
 
-  const user = { name: "Eugene", avatarUrl: "" };
-
   const navItems = isAuth
-    ? [{ label: "Профіль", action: handleNavigate }]
-    : [{ label: "Профіль" }, { label: "Войти", action: handleAuthDrawer }];
+    ? [{ label: "Profile", action: handleNavigate }]
+    : [{ label: "Profile" }, { label: "Log In", action: handleAuthDrawer }];
 
   const handleDrawerToggle = () => setDrawerOpen(!drawerOpen);
 
@@ -96,7 +95,7 @@ const Header: FC = () => {
                   {item.label}
                 </Button>
               ))}
-              {isAuth && <Avatar>{user.name[0]}</Avatar>}
+              {isAuth && <Avatar>{user.username[0]}</Avatar>}
             </Box>
           )}
         </Toolbar>

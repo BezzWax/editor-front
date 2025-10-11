@@ -13,10 +13,13 @@ import {
 import parse from "html-react-parser";
 import DOMPurify from "dompurify";
 import { useGetArticleByIdQuery } from "store/services/articlesApi";
+import { Comments } from "components";
+import { getUserData } from "utils";
 
 const Article: FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const user = getUserData();
   const { data: article, isLoading, error } = useGetArticleByIdQuery(id!);
 
   const handleBack = () => {
@@ -122,6 +125,8 @@ const Article: FC = () => {
           </Box>
         </Paper>
       </Container>
+
+      <Comments articleId={id || ''} currentUserId={user.id} />
     </>
   );
 };

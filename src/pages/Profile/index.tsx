@@ -10,8 +10,9 @@ import {
   Dialog,
   DialogTitle,
   DialogContent,
+  Container,
 } from "@mui/material";
-import { ArticleEditor } from "components";
+import { AllArticles, ArticleEditor } from "components";
 import { getUserData } from "utils";
 import { useGetArticleByUserIdQuery } from "store/services/articlesApi";
 
@@ -19,12 +20,10 @@ const Profile: FC = () => {
   const user = getUserData();
   const [editing, setEditing] = useState(false);
 
-  const { data } = useGetArticleByUserIdQuery(user.id)
-
-  console.log(data)
+  const { data } = useGetArticleByUserIdQuery(user.username);
 
   return (
-    <Box p={4} maxWidth={600} mx="auto">
+    <Box p={4} maxWidth={1200} mx="auto">
       <Paper elevation={3} sx={{ p: 3, borderRadius: 3 }}>
         <Stack spacing={2} alignItems="center">
           <Avatar sx={{ width: 80, height: 80 }}>
@@ -33,11 +32,7 @@ const Profile: FC = () => {
           {editing ? (
             <>
               <TextField label="Name" value={user?.username} fullWidth />
-              <TextField
-                label="Email"
-                value={user?.email}
-                fullWidth
-              />
+              <TextField label="Email" value={user?.email} fullWidth />
             </>
           ) : (
             <>
@@ -62,6 +57,18 @@ const Profile: FC = () => {
           <ArticleEditor onChange={() => setEditing(!editing)} />
         </DialogContent>
       </Dialog>
+
+      <Container
+        maxWidth="lg"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <AllArticles data={data} />
+      </Container>
+
     </Box>
   );
 };
