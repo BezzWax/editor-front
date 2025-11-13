@@ -46,7 +46,7 @@ const ArticleEditor: FC<TArticleEditor> = ({ onChange }) => {
         );
         quill.setSelection(range.index + 1);
       } catch (err: any) {
-        console.log("Ошибка загрузки изображения", err);
+        console.log("Image upload error", err);
       }
     };
   };
@@ -73,12 +73,12 @@ const ArticleEditor: FC<TArticleEditor> = ({ onChange }) => {
   const handleSave = async () => {
     try {
       await createArticle({ title, content, author: user.username }).unwrap();
-      alert("✅ Статья сохранена!");
+      alert("✅ Article saved!");
       setTitle("");
       setContent("");
       onChange();
     } catch (err: any) {
-      console.log("❌ Ошибка сохранения статьи", err);
+      console.log("❌ Article saving error", err);
       onChange();
     }
   };
@@ -86,12 +86,12 @@ const ArticleEditor: FC<TArticleEditor> = ({ onChange }) => {
   return (
     <Box>
       <Typography variant="h5" sx={{ mb: 2 }}>
-        Редактор статьи
+        Article Editor
       </Typography>
 
       <TextField
         fullWidth
-        label="Заголовок статьи"
+        label="Article Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
         sx={{ mb: 2 }}
@@ -123,10 +123,10 @@ const ArticleEditor: FC<TArticleEditor> = ({ onChange }) => {
 
       <Box sx={{ display: "flex", gap: 2, mt: 10 }}>
         <Button variant="contained" onClick={handleSave} disabled={isLoading}>
-          {isLoading ? "Сохраняю..." : "Сохранить"}
+          {isLoading ? "Saving..." : "Save"}
         </Button>
         <Button variant="outlined" onClick={() => setPreview((p) => !p)}>
-          {preview ? "Редактировать" : "Предпросмотр"}
+          {preview ? "Edit" : "Preview"}
         </Button>
       </Box>
     </Box>
