@@ -46,7 +46,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
       }).unwrap();
 
       dispatch(setAuthData(response));
-      toast.success(`Добро пожаловать, ${response.user.username}!`);
+      toast.success(`Welcome, ${response.user.username}!`);
       onClose();
     } catch (err: any) {
       console.error("Login failed:", err);
@@ -56,7 +56,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
       } else if (typeof messages === "string") {
         toast.error(messages);
       } else {
-        toast.error("Произошла ошибка при входе");
+        toast.error("An error occurred during login");
       }
     }
   };
@@ -70,7 +70,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
       }).unwrap();
 
       dispatch(setAuthData(response));
-      toast.success(`Добро пожаловать, ${response.user.username}!`);
+      toast.success(`Welcome, ${response.user.username}!`);
       onClose();
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -83,7 +83,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
       } else if (typeof messages === "string") {
         toast.error(messages);
       } else {
-        toast.error("Произошла ошибка при регистрации");
+        toast.error("An error occurred during registration");
       }
     }
   };
@@ -94,14 +94,14 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
 
       {}
         <Tabs value={tab} onChange={handleTabChange} centered>
-          <Tab label="Войти" />
-          <Tab label="Регистрация" />
+          <Tab label="Login" />
+          <Tab label="Register" />
         </Tabs>
 
         {tab === 0 ? (
           <Box mt={3}>
             <Typography variant="h6" gutterBottom>
-              Авторизация
+              Login
             </Typography>
             <Stack spacing={2}>
               <TextField
@@ -111,7 +111,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
                 onChange={(e) => setLoginEmail(e.target.value)}
               />
               <TextField
-                label="Пароль"
+                label="Password"
                 type="password"
                 fullWidth
                 value={loginPassword}
@@ -123,14 +123,14 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
                 onClick={handleLogin}
                 disabled={isLoginLoading}
               >
-                Войти
+                Login
               </Button>
             </Stack>
           </Box>
         ) : (
           <Box mt={3}>
             <Typography variant="h6" gutterBottom>
-              Регистрация
+              Registration
             </Typography>
             <Stack spacing={2}>
               <TextField
@@ -140,13 +140,13 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <TextField
-                label="Имя пользователя"
+                label="Username"
                 fullWidth
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
               <TextField
-                label="Пароль"
+                label="Password"
                 type="password"
                 fullWidth
                 value={password}
@@ -158,7 +158,7 @@ const AuthDrawer: FC<AuthDrawerProps> = ({ open, onClose }) => {
                 onClick={handleRegister}
                 disabled={isLoading}
               >
-                Зарегистрироваться
+                Register
               </Button>
             </Stack>
           </Box>
